@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="jobApplicationForm.css" rel="stylesheet">
+</head>
+<body>
+	<img src="https://mapr.com/products/product-overview/apache-zookeeper/assets/zookeeper-image.png">
+	<h1 >Zookeeper Job Application</h1>
+  	<div class="container">
+			<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+				<fieldset class="form-horizontal" >
+						<legend>Personal Information</legend>
+						<div class="form-group">
+								<label class="col-sm-3 control-label">Full Name</label>
+								<div class="col-sm-9">
+									<input class="form-control" type="text" name="name">
+								</div>
+							</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-9">
+								<input class="form-control" type="text" name="email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Password</label>
+							<div class="col-sm-9">
+								<input class="form-control" type="password" name="password">
+							</div>
+						</div>
+				</fieldset>
+				<fieldset>
+						<legend>About You</legend>
+						<p>Are you willing to feed the aligators?</p>
+						<input type="radio" name="answer" value="yes"> Yes<br> <input type="radio" name="answer" value="no"> No
+						<br>
+						<p>What relevant training do you have?</p>
+						<input type="checkbox" name="training" value="Bike">
+							CPR<br>
+						<input type="checkbox" name="training" value="Car">
+							Veterinary Training<br>
+						<input type="checkbox" name="training" value="Car">
+							Pet Ownership<br>
+							<p>What animal exhibit would you be interested in maintaining?</p>
+							<select name="animals">
+								<option value="Lions">Lions</option>
+								<option value="Polar Bears">Polar Bears</option>
+								<option value="Snakes">Snakes</option>
+								<option value="Parrots">Parrots</option>
+							</select>
+							<br><br>
+						<div class="form-group">
+							<label class="control-label">What is your previous work experience?</label>
+							<textarea class="form-control" name="short-answer" rows="6"></textarea>
+						</div>
+					</fieldset>
+					<input class="btn btn-info btn-lg" type="submit" value="Submit form">
+			</form>
+	</div>
+</body>
